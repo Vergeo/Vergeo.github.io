@@ -1,0 +1,217 @@
+:root {
+    --blue1 : #0B2447;
+    --blue2 : #19376D;
+    --blue3 : #576CBC;
+    --blue4 : #A5D7E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html {
+    background-color: #040f20;
+}
+
+.main {
+    margin: 3vh 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left, .right {
+    background-color: var(--blue1);
+    border-radius: 20px;
+    /* overflow-x: hidden; */
+    box-shadow: 0px 0px 5px black;
+    height: 94vh;
+}
+
+.left {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    justify-content: space-between;
+    padding: 5% 5% 0 5%;
+}
+
+.left .profpic {
+    width: 70%;
+    background-color: var(--blue2);
+    border-radius: 20px;
+}
+
+.left .name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.left .title {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 5px 20px;
+    font-weight: 400;
+    background-color: var(--blue2);
+}
+
+.left .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    justify-content: space-evenly;
+    width: 90%;
+    overflow-x: hidden;
+    padding: 0 5% 5% 5%;
+}
+
+.left .contact > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left .contact hr {
+    width: 100%;
+}
+
+.left .contact i {
+    font-size: 1.5vw;
+    background-color: var(--blue2);
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    width: 2vw;
+    border-radius: 8px;
+    height: 2vw;
+    display: 15%;
+    align-content: center;
+    justify-content: center;
+}
+
+.left .contact .text {
+    overflow-x: hidden;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.left .contact .text p b{
+    color: var(--blue4);
+}
+
+.right {
+    width: 78%;
+    overflow: hidden;
+}
+
+.right .header {
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+}
+
+.right .header nav {
+    background-color: var(--blue2);
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 0 0 20px;
+}
+
+.right .header button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.right .header button p{
+    color: var(--blue4);
+    border: none;
+    font-weight: bold;
+}
+
+.right .header button p.not-focused:hover{
+    color: var(--blue1);
+    animation: nav-hover 0.2s ease-in;
+}
+
+.right .header button p.focused{
+    color: var(--blue1);
+}
+
+@keyframes nav-hover {
+    0% {color: var(--blue4);}
+    100% {color: var(--blue1);}
+    
+}
+
+.right hr {
+    margin: 1% 0 1% 2%;
+    width: 3%;
+    border: 3px solid var(--blue4);
+    border-radius: 5px;
+}
+
+.right .header .header-title {
+    padding-left: 2%;
+    font-size: 200%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.right .content {
+    padding: 2%;
+    overflow-y: scroll;
+    height: 80%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.right .content h2{
+    margin-bottom: 1%;
+    color: var(--blue4);
+}
+
+.right .content .categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right .content .categories .category {
+    width: 44%;
+    height: 6%;
+    background-color: var(--blue2);
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.right .content .categories .category i{
+    font-size: 400%;
+    color: var(--blue4);
+}
+
+.right .content .categories .category .text{
+    margin-left: 2%;
+}
+
+.right .content .categories .category .text h3{
+    color: var(--blue4);
+}
