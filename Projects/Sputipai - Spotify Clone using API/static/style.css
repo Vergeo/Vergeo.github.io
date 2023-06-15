@@ -1,0 +1,405 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+}
+
+section.new-search {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 2;
+    animation: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes newProfileAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+section.new-search .profile-entry {
+    margin-top: 0.5rem;
+    width: 20vw;
+    padding: 3px 6px;
+    border-radius: 10rem;
+    /* border: none; */
+    font-size: 1.2rem;
+    outline: none;
+    border: 3px solid rgba(120, 120, 120, 0);
+}
+
+section.new-search .profile-entry:focus {
+    animation: profileFocus 0.3s linear;
+    border: 3px solid rgba(120, 120, 120, 0.6);
+}
+
+@keyframes profileFocus {
+    0% {border: 3px solid rgba(120, 120, 120, 0);}
+    100% {border: 3px solid rgba(120, 120, 120, 0.6);}
+}
+
+section.new-search .buttons {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+section.new-search .profile-submit {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 10vw;
+    padding: 3px 3.5px;
+    border-radius: 10rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgba(0, 128, 0, 0.2);
+}
+
+section.new-search .profile-submit:hover {
+    animation: submitAnimation 0.3s linear;
+    background-color: rgba(0, 128, 0, 0.4);
+}
+
+@keyframes submitAnimation {
+    0% {background-color: rgba(0, 128, 0, 0.2);}
+    100% {background-color: rgba(0, 128, 0, 0.4);}
+}
+
+section.new-search .profile-cancel {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 10vw;
+    padding: 3px 3.5px;
+    border-radius: 10rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+@keyframes cancelAnimation {
+    0% {background-color: rgba(255, 0, 0, 0.2);}
+    100% {background-color: rgba(255, 0, 0, 0.4);}
+}
+
+section.new-search .profile-cancel:hover {
+    animation: cancelAnimation 0.3s linear;
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+section.left {
+    position: fixed;
+    width: 20vw;
+    background-color: black;
+    height: 100vh;
+}
+
+section.left .logo img {
+    width: 60%;
+    padding-left: 10%;
+    margin: 5vh 0;
+}
+
+section.left h2 {
+    margin: 1vh 0;
+}
+
+section.left .menu {
+    padding-left: 10%;
+    margin: 2.5vh 0;
+}
+
+section.left .menu a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+section.left .menu a:hover{
+    text-decoration: none;
+    animation: menuHover 0.2s linear;
+    color: rgba(255, 255, 255, 1);
+}
+
+@keyframes menuHover {
+    0% {color: rgba(255, 255, 255, 0.6);}
+    100% {color: rgba(255, 255, 255, 1);}
+}
+
+section.left .menu p{
+    margin: 1rem 0;
+}
+
+section.right {
+    width: 80vw;
+    height: 200vh;
+    margin-left: 20vw;
+}
+
+section.right .topbar {
+    position: fixed;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-image: linear-gradient(rgba(255, 165, 0, 0.3), rgba(20, 20, 20, 0));
+}
+
+section.right .leftbar, section.right .rightbar, section.right .rightbar .profile{
+    display: flex;
+    flex-direction: row;
+}
+
+section.right .leftbar {
+    margin-left: 2rem;
+    align-items: center;
+}
+
+section.right .leftbar a {
+    margin: 0 1rem;
+    padding: 3px 13px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+section.right .leftbar a:hover {
+    animation: topbarAnimation 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+@keyframes topbarAnimation {
+    0% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+
+section.right .rightbar {
+    margin-right: 2rem;
+    float: right;
+    align-items: center;
+}
+
+section.right .rightbar a{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+section.right .rightbar a:hover{
+    animation: topbarAnimation 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+section.right .content {
+    margin-top: 5vh;
+    padding: 5vh 2vw;
+}
+
+section.right .content .recommend{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+section.right .content .recommend a{
+    width: 32%;
+    height: 6rem;
+    background-color: rgba(120, 120, 120, 0.3);
+    border-radius: 0.2rem;
+}
+
+section.right .content .recommend a:hover{
+    animation: playlistAnimation 0.3s linear;
+    background-color: rgba(120, 120, 120, 0.6);
+}
+
+section.right .content .recommend .rec-playlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.right .content .recommend a{
+    text-decoration: none;
+}
+
+section.right .content .recommend a img{
+    width: 6rem;
+    height: 6rem;
+}
+
+section.right .content .recommend a h3{
+    color: white;
+    margin-left: 1rem;
+}
+
+@keyframes playlistAnimation {
+    0% {
+        background-color: rgba(120, 120, 120, 0.3);
+    }
+    100% {
+        background-color: rgba(120, 120, 120, 0.6);
+    }
+}
+
+section.right .searched .track {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+section.right .searched .track img{
+    width: 15rem;
+    height: 15rem;
+}
+
+section.right .searched .track .track-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    height: 15rem;
+    justify-content: space-around;
+}
+
+section.right .searched .track .track-info a{
+    padding: 0.2rem 0.5rem;
+    border-radius: 10rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+section.right .searched .track .track-info .track-website {
+    background-color: rgba(120, 120, 120, 0.3);
+}
+
+section.right .searched .track .track-info .track-spotify {
+    background-color: rgba(255, 165, 0, 0.3);
+}
+
+section.right .searched .track .track-info .track-spotify:hover{
+    background-color: rgba(255, 165, 0, 0.6);
+    animation: spotifyHover 0.3s linear;
+}
+
+section.right .searched .track .track-info .track-website:hover{
+    background-color: rgba(120, 120, 120, 0.6);
+    animation: playlistAnimation 0.3s linear;
+}
+
+@keyframes spotifyHover {
+    0% {background-color: rgba(255, 165, 0, 0.3);}
+    100% {background-color: rgba(255, 165, 0, 0.6);}
+}
+
+section.right .searched .playlist {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+section.right .searched .playlist .playlist-content {
+    display: flex;
+    flex-direction: row;
+}
+
+section.right .searched .playlist img{
+    width: 15rem;
+    height: 15rem;
+}
+
+section.right .searched .playlist .playlist-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    height: 15rem;
+    justify-content: space-around;
+}
+
+section.right .searched .playlist .playlist-info a{
+    padding: 0.2rem 0.5rem;
+    border-radius: 10rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+section.right .searched .playlist .playlist-info .playlist-website {
+    background-color: rgba(120, 120, 120, 0.3);
+}
+
+section.right .searched .playlist .playlist-info .playlist-spotify {
+    background-color: rgba(255, 165, 0, 0.3);
+}
+
+section.right .searched .playlist .playlist-info .playlist-spotify:hover{
+    background-color: rgba(255, 165, 0, 0.6);
+    animation: spotifyHover 0.3s linear;
+}
+
+section.right .searched .playlist .playlist-info .playlist-website:hover{
+    background-color: rgba(120, 120, 120, 0.6);
+    animation: playlistAnimation 0.3s linear;
+}
+
+section.right .searched .playlist .playlist-tracks {
+    margin-top: 1rem;
+}
+
+section.right .searched .playlist .playlist-tracks a{
+    margin-top: 1rem;
+    background-color: rgba(50, 50, 50, 0.6);
+    animation: playlistAnimation 0.3s linear;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    /* padding-right: 5rem; */
+}
+
+section.right .searched .playlist .playlist-tracks a img {
+    height: 5rem;
+    width: 5rem;
+}
+
+section.right .searched .playlist .playlist-tracks p {
+    /* padding-right: 5rem; */
+    margin-left: 10rem;
+    width: 30%;
+}

@@ -1,0 +1,117 @@
+Screen :
+	name : "overview"
+
+	MDFloatLayout :
+		id : layout0
+		md_bg_color : rgba(124, 49, 43)
+
+	MDFloatLayout :
+		md_bg_color : rgba(124, 49, 43)
+		size_hint : (1, .3)
+		pos_hint : {"center_x" : .5, "center_y" : .75}
+
+		Image :
+			id : overview_img
+			source : "assets/img/overview_subtitle.png"
+			pos_hint : {"center_x" : .5, "center_y" : .85}
+			size_hint : (.9, .9)
+
+		Image :
+			source : "assets/img/login_title.png"
+			pos_hint : {"center_x" : .5, "center_y" : .85}
+
+	MDFloatLayout :
+		md_bg_color : rgba(124, 49, 43)
+		size_hint : (1, .7)
+		pos_hint : {"center_x" : .5, "center_y" : .35}
+
+		MDFloatLayout :
+			size_hint : 1,1
+			md_bg_color : rgba(64, 18, 15, 255)
+			MDFloatLayout :
+				md_bg_color : rgba(255, 255, 255, 255)
+				size_hint : (1, 0.2)
+				pos_hint : {"center_x" : .5, "center_y" : .9}
+
+				MDLabel :
+					text : "No :"
+					font_name: "Barlow"
+					font_size : "16sp"
+					bold : True
+					pos_hint : {"center_x" : .52, "center_y" : 1/3 - 1/6}
+					halign : "left"
+
+				TextInput :
+					size_hint : (.78, 1/3/1.2)
+					pos_hint : {"center_x" : .58, "center_y" : 1/3 - 1/6}
+					font_name : "Barlow"
+					font_size : "11sp"
+
+				MDLabel :
+					text : "Name :"
+					font_name: "Barlow"
+					font_size : "16sp"
+					bold : True
+					pos_hint : {"center_x" : .52, "center_y" : 2/3 - 1/6}
+					halign : "left"
+
+				TextInput :
+					size_hint : (.78, 1/3/1.2)
+					pos_hint : {"center_x" : .58, "center_y" : 2/3 - 1/6}
+					font_name : "Barlow"
+					font_size : "11sp"
+
+				MDLabel :
+					text : "Date :"
+					font_name: "Barlow"
+					font_size : "16sp"
+					bold : True
+					pos_hint : {"center_x" : .52, "center_y" : 1 - 1/6}
+					halign : "left"
+
+				TextInput :
+					size_hint : (.78, 1/3/1.2)
+					pos_hint : {"center_x" : .58, "center_y" : 1 - 1/6}
+					font_name : "Barlow"
+					font_size : "11sp"
+				
+
+			ScrollView :
+				id : purchases_scrlv
+				size_hint : (1, 0.7)
+				pos_hint : {"center_x" : .5, "center_y" : .45}
+
+		MDFloatLayout :
+			md_bg_color : rgba(255, 43, 43, 255)
+			size_hint : (1, 0.1)
+			pos_hint : {"center_x" : .5, "center_y" : .05}
+
+			MDFloatLayout :
+				md_bg_color : rgba(255, 43, 43, 255)
+				size_hint : (0.5, 1)
+				pos_hint : {"center_x" : .25, "center_y" : .5}
+
+				Button :
+					background_color : rgba(255, 43, 43, 0)
+					text : "Back"
+					font_name: 'Barlow'
+					font_size : "20sp"
+					text_color : (1,1,1)
+					size_hint : (1,1)
+					pos_hint : {"center_x" : .5, "center_y" : .5}
+					on_press : app.change_page("make_a_purchase")
+
+			MDFloatLayout :
+				md_bg_color : rgba(43, 43, 255, 255)
+				size_hint : (0.5, 1)
+				pos_hint : {"center_x" : .75, "center_y" : .5}
+
+				Button :
+					background_color : rgba(43, 43, 255, 0)
+					text : "Print"
+					font_name: 'Barlow'
+					font_size : "20sp"
+					text_color : (1,1,1)
+					size_hint : (1,1)
+					pos_hint : {"center_x" : .5, "center_y" : .5}
+					on_press : app.print_button_clicked()

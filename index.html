@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Profile</title>
+    <title>Vergeo - Profile</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -13,120 +12,373 @@
 
 </head>
 <body>
-    <section class="main">
-        <section class="left">
-            <div class="top">
-                <img src="https://cdn.discordapp.com/attachments/798027620334960681/1105845159364677722/free-avatar-370-456322.png" alt="" class="profpic">
-                <h1 class="name">Vergeo Valentino Gunawan</h1>
-                <h3 class="title">Web Developer</h3>
+    <div class="main">
+        <div class="nav">
+            <div class="modeswitch">
+                <div class="circle"></div>
             </div>
-            
-            <div class="contact">
-                <hr>
-                <div class="c-cat email">
-                    <i class='bx bxs-envelope'></i>
-                    <div class="text">
-                        <p><b>Email</b></p>
-                        <p>vergeovalentinog@gmail.com</p>
-                    </div>
+            <div class="nav-buttons">
+                <p class="home-btn">Home</p>
+                <p class="qua-btn">Qualification</p>
+                <p class="pro-btn">Projects</p>
+                <p class="contact-btn">Contact</p>
+
+                <div class="nav-highlight"></div>
+            </div>
+        </div>
+
+        <div class="pages">
+            <div class="home">
+                <div class="left">
+                    <img src="./img/profpic2.png" alt="">
                 </div>
-                <div class="phone">
-                    <i class='bx bxs-phone' ></i>
+
+                <div class="right">
                     <div class="text">
-                        <p><b>Phone Number</b></p>
-                        <p>+(62)898 2359 299</p>
-                    </div>
-                </div>
-                <div class="birthday">
-                    <i class='bx bxs-cake' ></i>
-                    <div class="text">
-                        <p><b>Birthday</b></p>
-                        <p>September 29, 2006</p>
-                    </div>
-                </div>
-                <div class="location">
-                    <i class='bx bx-current-location' ></i>
-                    <div class="text">
-                        <p><b>Location</b></p>
-                        <p>Palembang, Indonesia</p>
+                        <h3>Hi! I'm</h3>
+                        <h1>VERGEO</h1>
+                        <h1>VALENTINO</h1>
+                        <h1>GUNAWAN</h1>
+                        <h3>A Web Developer</h3>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="right">
-            <section class="header">
-                <h2 class="header-title">About Me</h2>
-                <nav>
-                    <button class="about-btn" onclick="about_btn_clicked()"><p class="focused">About</p></button>
-                    <button class="achievement-btn" onclick="achievement_btn_clicked()"><p class="not-focused">Achievement</p></button>
-                    <button class="contact-btn" onclick="about_btn_clicked()"><p class="not-focused">Contact</p></button>
-                </nav>
-            </section>
-            <hr>
-            <section class="content">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore sint inventore voluptas, itaque excepturi atque officia molestias nisi, dolor, recusandae iure quibusdam earum ducimus illo officiis nobis magnam rem. Incidunt praesentium architecto velit vero ad placeat, ducimus ipsam quaerat tempora voluptate harum ab esse mollitia ullam quas nam maxime distinctio repellendus necessitatibus totam expedita impedit iusto perspiciatis. Nesciunt et consequuntur dignissimos optio sunt eaque recusandae, labore similique, voluptas itaque ad molestiae laudantium ipsum sequi magnam.</p>
-                <br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe illo voluptatem pariatur, facere nulla harum consequuntur distinctio quibusdam nostrum, alias non enim quasi quisquam reprehenderit! Unde nihil quidem nobis fugiat iure maiores voluptas. At soluta animi dicta saepe reiciendis tempore ipsa voluptatem delectus enim? Mollitia corporis laboriosam id voluptatem.</p>
-                
-                <br>
 
-                <h2>My Background</h2>
-
-                <div class="categories">
-                    <div class="category">
-                        <i class='bx bxl-python'></i>
-                        <div class="text"> 
-                            <h3>Python</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore amet sequi, quasi perspiciatis error sunt ea unde facilis laborum quisquam?</p>
+            <div class="qualification">
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <div class="card-normal">
+                                <i class='bx bxl-python bx-tada'></i>
+                                <h1>Python</h1>
+                            </div>
+    
+                            <div class="card-hovered">
+                                <h1>Python</h1>
+                                <p>Python is my first language. I've learned python since I was in eight grade and had some experience with some python libraries, like Tkinter, Pygame, and Kivy.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="category">
-                        <i class='bx bxl-c-plus-plus'></i>
-                        <div class="text"> 
-                            <h3>C++</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore amet sequi, quasi perspiciatis error sunt ea unde facilis laborum quisquam?</p>
+                    <div class="card">
+                        <div class="content">
+                            <div class="card-normal">
+                                <i class='bx bxl-c-plus-plus bx-tada'></i>
+                                <h1>C++</h1>
+                            </div>
+    
+                            <div class="card-hovered">
+                                <h1>C++</h1>
+                                <p>I use C++ mainly for competitive programming. I've learned a lot of complex algorithm and data structure in C++.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="category">
-                        <i class='bx bxl-javascript'></i>
-                        <div class="text"> 
-                            <h3>Javascript</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore amet sequi, quasi perspiciatis error sunt ea unde facilis laborum quisquam?</p>
+                    <div class="card">
+                        <div class="content">
+                            <div class="card-normal">
+                                <i class='bx bxl-javascript bx-tada'></i>
+                                <h1>Javascript</h1>
+                            </div>
+    
+                            <div class="card-hovered">
+                                <h1>Javascript</h1>
+                                <p>I learned javascript in highschool while learning full stack web development.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="category">
-                        <i class='bx bxl-html5'></i>
-                        <div class="text"> 
-                            <h3>HTML</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore amet sequi, quasi perspiciatis error sunt ea unde facilis laborum quisquam?</p>
+                    <div class="card">
+                        <div class="content">
+                            <div class="card-normal">
+                                <i class='bx bxl-html5 bx-tada'></i>
+                                <h1>HTML</h1>
+                            </div>
+    
+                            <div class="card-hovered">
+                                <h1>HTML</h1>
+                                <p>HTML is my main language when building website. I've made a lot of websites over the years including one for my school's organization.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="category">
-                        <i class='bx bxl-css3'></i>
-                        <div class="text"> 
-                            <h3>CSS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore amet sequi, quasi perspiciatis error sunt ea unde facilis laborum quisquam?</p>
+                    <div class="card">
+                        <div class="content">
+                            <div class="card-normal">
+                                <i class='bx bxl-css3 bx-tada'></i>
+                                <h1>CSS</h1>
+                            </div>
+    
+                            <div class="card-hovered">
+                                <h1>CSS</h1>
+                                <p>I've always been in loved with CSS. I have a lot of experience in handling CSS and able to decorate and animate HTML website to a certain degree.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="category">
-                        <i class='bx bxl-react'></i>
-                        <div class="text"> 
-                            <h3>React</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore amet sequi, quasi perspiciatis error sunt ea unde facilis laborum quisquam?</p>
+                    <div class="card">
+                        <div class="content">
+                            <div class="card-normal">
+                                <i class='bx bxl-react bx-tada'></i>
+                                <h1>React</h1>
+                            </div>
+    
+                            <div class="card-hovered">
+                                <h1>React</h1>
+                                <p>I've only had a year of experience when using react, but I've always eager to learn more especially in using React for web building.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="category">
-                        <i class='bx bxl-git'></i>
-                        <div class="text"> 
-                            <h3>Git</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore amet sequi, quasi perspiciatis error sunt ea unde facilis laborum quisquam?</p>
+                    <div class="card">
+                        <div class="content">
+                            <div class="card-normal">
+                                <i class='bx bxl-git bx-tada'></i>
+                                <h1>Git</h1>
+                            </div>
+    
+                            <div class="card-hovered">
+                                <h1>Git</h1>
+                                <p>I use git to organize all of my projects in github, which you can explore in the "Projects" section.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                
-            </section>
-        </section>
-    </section>
+            <div class="projects">
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Battleship</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Battleship - Tkinter</h1>
+                                    <p>In this game, there is 5x5 grid and you need to guess the correct square.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Battleship 2 - Tkinter</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Battleship 2 - Tkinter</h1>
+                                    <p>In this game, there is 8x8 grid and you need to guess the correct square using x y coordinate system.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Contact App - Tkinter</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Contact App - Tkinter</h1>
+                                    <p>In this app you can save your contacts, search them, and edit them.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Find the Treasure - Javascript</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Find the Treasure - Javascript</h1>
+                                    <p>In this game you have to guess where the treasure is within the map. The game tells you whether you are close or far each time you guess.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Geschenk - Kivy</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Geschenk - Kivy</h1>
+                                    <p>In this app, you are able to buy gifts online with easy to understand GUI.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>ParkingPayment - Tkinter</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>ParkingPayment - Tkinter</h1>
+                                    <p>This app manages all the parking spaces you have. You are able to insert a new vehicle, input some data, and then count the price they have to pay based on how long they park automatically.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>SnakeGame - Javascript</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>SnakeGame - Javascript</h1>
+                                    <p>This a remake of the traditional snake game where you need to consume apple to make progress and avoid hitting the wall.</p>
+                                </div></a>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>SpaceShooter - Javascript</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>SpaceShooter - Javascript</h1>
+                                    <p>This a team based project that I did with my friend. In this game, you need to stay alive by shooting the trash that has been accumulated in the space.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>SpaceShooter With Database - Javascript, Flask, Sqlite</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>SpaceShooter With Database - Javascript, Flask, Sqlite</h1>
+                                    <p>This page introduced a home page, where you can learn some information with working account system, including login and signup, with the SpaceShooter game as the main feature.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Sputipai - Spotify Clone using API</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Sputipai - Spotify Clone using API</h1>
+                                    <p>This is a remake of the spotify app, where you can find some information about certain profile, song, or playlist using the spotify API.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Tetris - Tkinter</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Tetris - Tkinter</h1>
+                                    <p>This is my version of the classic tetris game using only tkinter. This game has some tutorials about the game and a working leaderboard system.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <a href="">
+                                <div class="card-normal">
+                                    <img src="" alt="">
+                                    <h1>Credence - Official OSIS SMA IGS Website 2023</h1>
+                                </div>
+        
+                                <div class="card-hovered">
+                                    <h1>Credence - Official OSIS SMA IGS Website 2023</h1>
+                                    <p>This is a team based project consisting of 3 members. We each have our own specialty and contribution to the website.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="contact-cont">
+                    <h1>Contact Me</h1>
+                    <p>Get in touch with me to know more</p>
+
+                    <div class="lists">
+                        <a href="tel:+628982359299">
+                            <div class="list">
+                                <i class='bx bxs-phone'></i>
+                                <h1>Phone</h1>
+                                <p>+62 898 2359 299</p>
+                            </div>
+                        </a>
+                        <a href="https://discord.com/channels/@me">
+                            <div class="list">
+                                <i class='bx bxl-discord'></i>
+                                <h1>Discord</h1>
+                                <p>vorbunny</p>
+                            </div>
+                        </a>
+                        <a href="mailto:vergeovalentinog@gmail.com">
+                            <div class="list">
+                                <i class='bx bx-envelope' ></i>
+                                <h1>Email</h1>
+                                <p>vergeovalentinog@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Vergeo">
+                            <div class="list">
+                                <i class='bx bxl-github' ></i>
+                                <h1>GitHub</h1>
+                                <p>Vergeo</p>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/vergeovvg/">
+                            <div class="list">
+                                <i class='bx bxl-instagram' ></i>
+                                <h1>Instagram</h1>
+                                <p>vergeovvg</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

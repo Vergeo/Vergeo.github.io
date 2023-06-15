@@ -1,0 +1,64 @@
+Screen :
+	name : "login"
+
+	MDFloatLayout :
+		md_bg_color : rgba(124, 49, 43)
+
+		Image :
+			id : login_img
+			source : "assets/img/login_subtitle.png"
+			pos_hint : {"center_x" : .5, "center_y" : .85}
+			size_hint : (.9, .9)
+
+		Image :
+			source : "assets/img/login_title.png"
+			pos_hint : {"center_x" : .5, "center_y" : .85}
+
+	MDFloatLayout :
+		md_bg_color : rgba(124, 49, 43)
+		size_hint : (1, .4)
+		pos_hint : {"center_x" : .5, "center_y" : .5}
+
+		Image :
+			source : "assets/img/username_password.png"
+			pos_hint : {"center_x" : .5, "center_y" : .5}
+
+
+		TextInput :
+			id : username_entry
+			size_hint : (.75, .12)
+			pos_hint : {"center_x" : .54, "center_y" : .64}
+			font_name : "Barlow"
+			background_color : 0,0,0,0
+			multiline : False
+			write_tab : False
+
+		TextInput :
+			id : password_entry
+			size_hint : (.75, .12)
+			pos_hint : {"center_x" : .54, "center_y" : .293}
+			font_name : "Barlow"
+			background_color : 0,0,0,0
+			multiline : False
+			write_tab : False
+			password :  True
+
+	Button :
+		id : login_button
+		text : "LOGIN"
+		size_hint : .85, .06
+		pos_hint : {"center_x" : .5, "center_y" : .27}
+		background_color : 0,0,0,0
+		font_size : "16sp"
+		font_name : "Barlow"
+		bold : True
+		color : 1,1,1,1
+		canvas.before :
+			Color : 
+				rgb : rgba(66, 14, 10, 255)
+			RoundedRectangle :
+				size : self.size
+				pos : self.pos
+				radius : [5]
+		on_press : app.login()
+

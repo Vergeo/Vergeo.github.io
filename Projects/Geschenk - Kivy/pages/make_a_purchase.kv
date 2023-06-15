@@ -1,0 +1,226 @@
+<MenuButton@Button>
+	text : ""
+	size_hint : (.203, .203)
+	background_color : rgba(230, 230, 230, 50)
+	color : (0,0,0)
+	on_press : app.menu_button_clicked(self)
+	font_name : "Barlow"
+	font_size : "10sp"
+
+<CategoryButton@Button>
+	text:""
+	size_hint : (.203, 1)
+	background_color : rgba(124, 49, 43, 100)
+	color : 1,1,1
+	font_name : "Barlow"
+	font_size : "10sp"
+	on_press: self.background_color = rgba(0, 0, 255, 10)
+	on_press : app.category_button_clicked(self)
+	on_release: self.background_color = rgba(124, 49, 43, 100)
+
+Screen :
+	name : "make_a_purchase"
+
+	MDFloatLayout :
+		id : layout0
+		md_bg_color : rgba(124, 49, 43)
+		MDToolbar :
+			title : ""
+			md_bg_color : rgba(124, 49, 43)
+			left_action_items : [["menu", lambda x : nav_drawer.set_state("toggle")]]
+			top : root.top
+
+	MDFloatLayout :
+		md_bg_color : rgba(124, 49, 43)
+		size_hint : (1, .3)
+		pos_hint : {"center_x" : .5, "center_y" : .75}
+
+		Image :
+			id : make_a_purchase_img
+			source : "assets/img/make_a_purchase_subtitle.png"
+			pos_hint : {"center_x" : .5, "center_y" : .85}
+			size_hint : (.9, .9)
+
+		Image :
+			source : "assets/img/login_title.png"
+			pos_hint : {"center_x" : .5, "center_y" : .85}
+
+	MDFloatLayout :
+		md_bg_color : rgba(124, 49, 43)
+		size_hint : (1, .7)
+		pos_hint : {"center_x" : .5, "center_y" : .35}
+
+		MDFloatLayout :
+			md_bg_color : rgba(92, 26, 21)
+			size_hint : (1, 0.09821428571428571428571428571429)
+			pos_hint : {"center_x" : .5, "center_y" : .95}
+
+			CategoryButton :
+				id : category_button_0
+				pos_hint : {"center_x" : (360-288)/720, "center_y" : .5}
+			CategoryButton :
+				id : category_button_1
+				pos_hint : {"center_x" : (360-144)/720, "center_y" : .5}
+			CategoryButton :
+				id : category_button_2
+				pos_hint : {"center_x" : .5, "center_y" : .5}
+			CategoryButton :
+				id : category_button_3
+				pos_hint : {"center_x" : (360+144)/720, "center_y" : .5}
+			CategoryButton :
+				id : category_button_4
+				pos_hint : {"center_x" : (360+288)/720, "center_y" : .5}
+
+		MDFloatLayout :
+			md_bg_color : rgba(230, 230, 230)
+			size_hint : (1, 0.80357142857142857142)
+			pos_hint : {"center_x" : .5, "center_y" : .5}
+
+			MenuButton :
+				id : menu_button_02
+				pos_hint : {"center_x" : .5, "center_y" : (360+288)/720}
+			MenuButton :
+				id : menu_button_01
+				pos_hint : {"center_x" : (360-144)/720, "center_y" : (360+288)/720}
+			MenuButton :
+				id : menu_button_00
+				pos_hint : {"center_x" : (360-288)/720, "center_y" : (360+288)/720}
+			MenuButton :
+				id : menu_button_03
+				pos_hint : {"center_x" : (360+144)/720, "center_y" : (360+288)/720}
+			MenuButton :
+				id : menu_button_04
+				pos_hint : {"center_x" : (360+288)/720, "center_y" : (360+288)/720}
+			MenuButton :
+				id : menu_button_12
+				pos_hint : {"center_x" : .5, "center_y" : (360+144)/720}
+			MenuButton :
+				id : menu_button_11
+				pos_hint : {"center_x" : (360-144)/720, "center_y" : (360+144)/720}
+			MenuButton :
+				id : menu_button_10
+				pos_hint : {"center_x" : (360-288)/720, "center_y" : (360+144)/720}
+			MenuButton :
+				id : menu_button_13
+				pos_hint : {"center_x" : (360+144)/720, "center_y" : (360+144)/720}
+			MenuButton :
+				id : menu_button_14
+				pos_hint : {"center_x" : (360+288)/720, "center_y" : (360+144)/720}
+			MenuButton :
+				id : menu_button_22
+				pos_hint : {"center_x" : .5, "center_y" : .5}
+			MenuButton :
+				id : menu_button_21
+				pos_hint : {"center_x" : (360-144)/720, "center_y" : .5}
+			MenuButton :
+				id : menu_button_20
+				pos_hint : {"center_x" : (360-288)/720, "center_y" : .5}
+			MenuButton :
+				id : menu_button_23
+				pos_hint : {"center_x" : (360+144)/720, "center_y" : .5}
+			MenuButton :
+				id : menu_button_24
+				pos_hint : {"center_x" : (360+288)/720, "center_y" : .5}
+			MenuButton :
+				id : menu_button_32
+				pos_hint : {"center_x" : .5, "center_y" : (360-144)/720}
+			MenuButton :
+				id : menu_button_31
+				pos_hint : {"center_x" : (360-144)/720, "center_y" : (360-144)/720}
+			MenuButton :
+				id : menu_button_30
+				pos_hint : {"center_x" : (360-288)/720, "center_y" : (360-144)/720}
+			MenuButton :
+				id : menu_button_33
+				pos_hint : {"center_x" : (360+144)/720, "center_y" : (360-144)/720}
+			MenuButton :
+				id : menu_button_34
+				pos_hint : {"center_x" : (360+288)/720, "center_y" : (360-144)/720}
+			MenuButton :
+				id : menu_button_42
+				pos_hint : {"center_x" : .5, "center_y" : (360-288)/720}
+			MenuButton :
+				id : menu_button_41
+				pos_hint : {"center_x" : (360-144)/720, "center_y" : (360-288)/720}
+			MenuButton :
+				id : menu_button_40
+				pos_hint : {"center_x" : (360-288)/720, "center_y" : (360-288)/720}
+			MenuButton :
+				id : menu_button_43
+				pos_hint : {"center_x" : (360+144)/720, "center_y" : (360-288)/720}
+			MenuButton :
+				id : menu_button_44
+				pos_hint : {"center_x" : (360+288)/720, "center_y" : (360-288)/720}
+			
+
+
+		MDFloatLayout :
+			md_bg_color : rgba(0,255, 1)#rgba(124, 49, 43)
+			size_hint : (1, 0.09821428571428571428571428571429)
+			pos_hint : {"center_x" : .5, "center_y" : .05}
+
+			Button :
+				size_hint : (1,1)
+				pos_hint : {"center_x" : .5, "center_y" : .5}
+				on_press : app.change_page("overview")
+
+
+	MDNavigationDrawer :
+		id : nav_drawer
+
+		MDFloatLayout :
+
+			Image :
+				source : "assets/img/logo.png"
+				size_hint : .7, .7
+				pos_hint : {"center_x" : .45, "center_y" : .87}
+
+			MDRectangleFlatIconButton :
+				icon : "braille"
+				text : "Dashboard"
+				theme_text_color : "Custom"
+				line_color : 1, 1, 1, 1
+				icon_color : rgba(124, 49, 43)
+				text_color : rgba(124, 49, 43)
+				pos_hint : {"center_x" : .27, "center_y" : .75}
+				on_press : app.change_page("dashboard")
+
+			MDRectangleFlatIconButton :
+				icon : "calculator"
+				text : "Make a Purchase"
+				theme_text_color : "Custom"
+				line_color : 1, 1, 1, 1
+				icon_color : rgba(124, 49, 43)
+				text_color : rgba(124, 49, 43)
+				pos_hint : {"center_x" : .33, "center_y" : .69}
+				on_press : app.change_page("make_a_purchase")
+
+			MDRectangleFlatIconButton :
+				icon : "account"
+				text : "Profile"
+				theme_text_color : "Custom"
+				line_color : 1, 1, 1, 0
+				icon_color : rgba(124, 49, 43)
+				text_color : rgba(124, 49, 43)
+				pos_hint : {"center_x" : .22, "center_y" : .63}
+				on_press : app.change_page("profile")
+
+			MDRectangleFlatIconButton :
+				icon : "account-convert"
+				text : "Logout"
+				theme_text_color : "Custom"
+				line_color : 1, 1, 1, 1
+				icon_color : rgba(124, 49, 43)
+				text_color : rgba(124, 49, 43)
+				pos_hint : {"center_x" : .235, "center_y" : .57}
+				on_press : app.sign_out()
+
+			MDRectangleFlatIconButton :
+				icon : "logout-variant"
+				text : "Exit"
+				theme_text_color : "Custom"
+				line_color : 1, 1, 1, 1
+				icon_color : rgba(124, 49, 43)
+				text_color : rgba(124, 49, 43)
+				pos_hint : {"center_x" : .215, "center_y" : .51}
+				on_press : app.exit()

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sputipai</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="new-search">
+            <h1 class="new-search-h1">Insert User ID</h1>
+            <!-- <div class="form"> -->
+            <input type="text" class="profile-entry">
+            <div class="buttons">
+                <a href="#" class="profile-cancel">❌</a>
+                <a href="#"  class="profile-submit">🔍</a>
+                <!-- <input type="button" value="❌" class="profile-cancel">
+                <input type="submit" value="🔍" class="profile-submit"> -->
+            </div>
+            <!-- </div> -->
+        </section>
+        <section class="left">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/sputipai_logo2.png') }}" alt="sputipai" class="logo">
+            </div>
+            <div class="menu">
+                <h1>Menu</h1>
+                <a href="#" class="a-recommended"><div class="recommended"><p>👍 Recommended Playlist</p></div></a>
+                <a href="#" class="a-search"><div class="search"><p>🔍 Search</p></div></a>
+                <a href="#" class="a-search-track"><div class="search-track"><p>🎶 Search Tracks by ID</p></div></a>
+                <a href="#" class="a-search-playlist"><div class="search-playlist"><p>🎴 Search Playlist by ID</p></div></a>
+                <a href="#" class="a-search-playlist"><div class="search-artist"><p>🧑‍🎤 Search Artist by ID</p></div></a>
+                <a href="#" class="a-search-profile"><div class="search-profile"><p>🧑 Search Profile by ID</p></div></a>
+            </div>
+        </section>
+        <section class="right">
+            <div class="topbar">
+                <div class="leftbar">
+                    <a href=""><h2><</h2></a>
+                    <a href=""><h2>></h2></a>
+                </div>
+                <div class="rightbar">
+                    <h5>Currently Searched : </h5>
+                   <a href="#" class="new-profile-btn"><h5>See Other's Profile</h5></a>
+                    <!-- <h2>Upgrade</h2>
+                    <div class="profile">
+                        <img src="" alt="prof_pic" class="prof_pic">
+                        <h2>Vails</h2>
+                    </div> -->
+                </div>
+            </div>
+            <div class="content">
+                
+                <h1>Recommended Playlist</h1>
+                <div class="recommend">
+                    <a href="#"><div class="rec-playlist">
+                        <img src="" alt="" class="rec-playlist-img-1">
+                        <h3 class="rec-playlist-h-1"></h3>
+                    </div></a>
+                    <a href="#"><div class="rec-playlist">
+                        <img src="" alt="" class="rec-playlist-img-2">
+                        <h3 class="rec-playlist-h-2"></h3>
+                    </div></a>
+                    <a href="#"><div class="rec-playlist">
+                        <img src="" alt="" class="rec-playlist-img-3">
+                        <h3 class="rec-playlist-h-3"></h3>
+                    </div></a>
+                    <a href="#"><div class="rec-playlist">
+                        <img src="" alt="" class="rec-playlist-img-4">
+                        <h3 class="rec-playlist-h-4"></h3>
+                    </div></a>
+                    <a href="#"><div class="rec-playlist">
+                        <img src="" alt="" class="rec-playlist-img-5">
+                        <h3 class="rec-playlist-h-5"></h3>
+                    </div></a>
+                    <a href="#"><div class="rec-playlist">
+                        <img src="" alt="" class="rec-playlist-img-6">
+                        <h3 class="rec-playlist-h-6"></h3>
+                    </div></a>
+                </div>
+                <div class="searched">
+                    <h1>Search Result</h1>
+                    <div class="track">
+                        <img src="" alt="" class="track-img">
+                        <div class="track-info">
+                            <h1 class="track-title">Title</h1>
+                            <h3 class="track-artist">Artist</h3>
+                            <p class="track-duration">Duration</p>
+                            <p class="track-release-date">Release Date</p>
+                            <p class="track-id">ID</p>
+                            <a href="" class="track-website">See on Website</a>
+                            <a href="" class="track-spotify">See on Spotify</a>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <div class="playlist-content">
+                            <img src="" alt="" class="playlist-img">
+                            <div class="playlist-info">
+                                <h1 class="playlist-title">Title</h1>
+                                <h3 class="playlist-owner">Owner</h3>
+                                <p class="playlist-track-count">Track Count</p>
+                                <p class="playlist-follower-count">Follower Count</p>
+                                <!-- <p class="playlist-id">ID</p> -->
+                                <!-- <a href="" class="playlist-website">See on Website</a> -->
+                                <a href="" class="playlist-spotify">See on Spotify</a>
+                            </div>
+                        </div>
+                        
+                        <div class="playlist-tracks">
+                            <!-- <a href="#">
+                                <img src="" alt="" class="p-track-img">
+                                <p class="p-track-title">Title</p>
+                                <p class="p-track-artist">Artist</p>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+    </div>
+    
+</body>
+</html>
