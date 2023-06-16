@@ -5,17 +5,17 @@ window.onbeforeunload = function () {
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    document.querySelector(".modeswitch").onclick = function() {
-        if (document.querySelector(".circle").classList.contains('dark')) {
-            document.querySelector(".circle").classList.add('light');
-            document.querySelector(".circle").classList.remove('dark');
+    // document.querySelector(".modeswitch").onclick = function() {
+    //     if (document.querySelector(".circle").classList.contains('dark')) {
+    //         document.querySelector(".circle").classList.add('light');
+    //         document.querySelector(".circle").classList.remove('dark');
 
 
-        } else {
-            document.querySelector(".circle").classList.add('dark');
-            document.querySelector(".circle").classList.remove('light');
-        } 
-    }
+    //     } else {
+    //         document.querySelector(".circle").classList.add('dark');
+    //         document.querySelector(".circle").classList.remove('light');
+    //     } 
+    // }
 
     const left = document.querySelector(".home-btn").getBoundingClientRect().left+"px";
     const width = document.querySelector(".home-btn").offsetWidth+"px";
@@ -41,6 +41,16 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".nav-highlight").style.setProperty('--cur-left', left);
 
         document.querySelector(".nav-highlight").style.animation = "move-highlight 1s ease-in-out";
+
+        const showedelements = document.querySelectorAll(".show");
+        showedelements.forEach((element) => {
+            element.classList.remove("show");
+        })
+
+        const hiddenelements = document.querySelector(".home").querySelectorAll(".hidden");
+        hiddenelements.forEach((element) => {
+            element.classList.add("show");
+        })
 
         setTimeout(function() {
             document.querySelector(".pages").style.setProperty('--from', "0vw");
@@ -69,6 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.querySelector(".nav-highlight").style.animation = "move-highlight 1s ease-in-out";
 
+        const showedelements = document.querySelectorAll(".show");
+        showedelements.forEach((element) => {
+            element.classList.remove("show");
+        })
+
+        const hiddenelements = document.querySelector(".qualification").querySelectorAll(".hidden");
+        hiddenelements.forEach((element) => {
+            element.classList.add("show");
+        })
+
         setTimeout(function() {
             document.querySelector(".pages").style.setProperty('--from', "-100vw");
             document.querySelector(".pages").style.animation = "";
@@ -96,6 +116,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.querySelector(".nav-highlight").style.animation = "move-highlight 1s ease-in-out";
 
+        const showedelements = document.querySelectorAll(".show");
+        showedelements.forEach((element) => {
+            element.classList.remove("show");
+        })
+
+        const hiddenelements = document.querySelector(".projects").querySelectorAll(".hidden");
+        hiddenelements.forEach((element) => {
+            element.classList.add("show");
+        })
+
         setTimeout(function() {
             document.querySelector(".pages").style.setProperty('--from', "-200vw");
             document.querySelector(".pages").style.animation = "";
@@ -122,6 +152,16 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".nav-highlight").style.setProperty('--cur-left', left);
 
         document.querySelector(".nav-highlight").style.animation = "move-highlight 1s ease-in-out";
+        
+        const showedelements = document.querySelectorAll(".show");
+        showedelements.forEach((element) => {
+            element.classList.remove("show");
+        })
+
+        const hiddenelements = document.querySelector(".contacts").querySelectorAll(".hidden");
+        hiddenelements.forEach((element) => {
+            element.classList.add("show");
+        })
         
         setTimeout(function() {
             document.querySelector(".pages").style.setProperty('--from', "-300vw");
@@ -166,5 +206,41 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 500);
         })
     }
+
+    // start
+    document.querySelector(".pages").style.left = "0vw";
+    document.querySelector(".pages").style.setProperty('--to', "0vw");
+    document.querySelector(".pages").style.animation = "page-slide 1s ease-in-out";
+
+    const left2 = document.querySelector(".home-btn").getBoundingClientRect().left+"px";
+    const width2 = document.querySelector(".home-btn").offsetWidth+"px"
+
+    document.querySelector(".nav-highlight").style.width = width2;
+    document.querySelector(".nav-highlight").style.setProperty('--cur-width', width2);
+    
+
+    document.querySelector(".nav-highlight").style.left = left2;
+    document.querySelector(".nav-highlight").style.setProperty('--cur-left', left2);
+
+    document.querySelector(".nav-highlight").style.animation = "move-highlight 1s ease-in-out";
+
+    const showedelements = document.querySelectorAll(".show");
+    showedelements.forEach((element) => {
+        element.classList.remove("show");
+    })
+
+    const hiddenelements = document.querySelector(".home").querySelectorAll(".hidden");
+    hiddenelements.forEach((element) => {
+        element.classList.add("show");
+    })
+
+    setTimeout(function() {
+        document.querySelector(".pages").style.setProperty('--from', "0vw");
+        document.querySelector(".pages").style.animation = "";
+
+        document.querySelector(".nav-highlight").style.setProperty('--prev-width', width2);
+        document.querySelector(".nav-highlight").style.setProperty('--prev-left', left2);
+        document.querySelector(".nav-highlight").style.animation = "";
+    }, 1000);
 
 })
